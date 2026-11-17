@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#6d45d8">
+<title>Happy Birthday Sambit Senapati!</title>
+<style>
+:root{
+  --ink:#251b3d;--muted:#6e6680;--purple:#7048d8;--pink:#f05b9d;
+  --yellow:#ffd76a;--blue:#5bc8ee;--mint:#72dfbd;--paper:#fffaff;
+  --shadow:0 18px 55px rgba(65,35,110,.13);--radius:26px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif;color:var(--ink);
+ background:radial-gradient(circle at 8% 5%,#ffe7f2 0,transparent 28rem),
+ radial-gradient(circle at 92% 18%,#e4f7ff 0,transparent 27rem),
+ linear-gradient(145deg,#fffaff,#f8f2ff 55%,#fff9e9);overflow-x:hidden}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+.topbar{position:sticky;top:0;z-index:20;background:#ffffffd9;backdrop-filter:blur(16px);
+ border-bottom:1px solid #eee5ff;padding:12px max(18px,calc((100vw - 1120px)/2));display:flex;
+ align-items:center;justify-content:space-between;gap:12px}
+.brand{font-weight:1000;letter-spacing:.02em;color:var(--purple);white-space:nowrap}
+.nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.nav a{text-decoration:none;font-size:.88rem;font-weight:800;padding:8px 11px;border-radius:999px}
+.nav a:hover{background:#f1eaff;color:var(--purple)}
+.hero{position:relative;min-height:590px;padding:78px 20px 72px;display:grid;place-items:center;text-align:center;overflow:hidden}
+.hero-inner{max-width:900px;position:relative;z-index:2}
+.eyebrow{display:inline-block;padding:9px 16px;border:1px solid #f2d4ff;border-radius:999px;background:#fff9;
+ color:#8d54c8;font-weight:900;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(2.6rem,8vw,6.5rem);line-height:.98;letter-spacing:-.055em;margin:24px 0 15px;
+ background:linear-gradient(90deg,#ff659e,#ffad48,#7b60e8,#35bde0);background-size:250% auto;
+ color:transparent;background-clip:text;-webkit-background-clip:text;animation:rainbow 7s linear infinite}
+@keyframes rainbow{to{background-position:250% center}}
+.hero p{font-size:clamp(1rem,2.3vw,1.25rem);color:var(--muted);max-width:650px;margin:0 auto 25px;line-height:1.7}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border:0;border-radius:999px;
+ text-decoration:none;font-weight:900;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px #5b39a52c}
+.primary{color:white;background:linear-gradient(110deg,#7650dc,#ef65a5)}
+.secondary{background:white;color:var(--purple);border:1px solid #e7dafa}
+.dark{background:#2d2146;color:#fff}
+.decor{position:absolute;font-size:clamp(2rem,5vw,4rem);opacity:.8;animation:float 5s ease-in-out infinite}
+.d1{left:7%;top:18%}.d2{right:8%;top:17%;animation-delay:1s}.d3{left:13%;bottom:13%;animation-delay:2s}.d4{right:13%;bottom:12%;animation-delay:.5s}
+@keyframes float{50%{transform:translateY(-20px) rotate(8deg)}}
+.confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.confetti i{position:absolute;top:-25px;width:9px;height:15px;border-radius:3px;opacity:.65;animation:fall 8s linear infinite}
+@keyframes fall{to{transform:translateY(720px) rotate(650deg)}}
+main{max-width:1120px;margin:auto;padding:0 20px 70px}
+.section{margin:26px 0 34px;padding:clamp(22px,4vw,42px);border:1px solid #eee5fb;border-radius:var(--radius);
+ background:#ffffffd9;box-shadow:var(--shadow)}
+.section-head{text-align:center;margin-bottom:24px}
+.kicker{font-size:.78rem;font-weight:1000;letter-spacing:.13em;text-transform:uppercase;color:#a05ec9}
+h2{font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.04em;margin:8px 0;color:#33234f}
+.section-head p{color:var(--muted);line-height:1.65;margin:0 auto;max-width:680px}
+.form-frame{width:100%;height:820px;border:0;border-radius:18px;background:#fff}
+.note{background:#fff8e7;border:1px solid #ffe5a3;padding:13px 16px;border-radius:15px;color:#72521b;font-size:.9rem;line-height:1.55}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}
+.gallery-tile{min-height:150px;border:1px dashed #d8c6f3;border-radius:20px;display:grid;place-items:center;text-align:center;
+ padding:18px;background:linear-gradient(145deg,#fff7fb,#f5f1ff);color:#7b6897}
+.gallery-tile strong{display:block;color:#4a376d;margin:7px 0}
+.gallery-tile span{font-size:.88rem;line-height:1.45}
+.gallery-emoji{font-size:2.3rem}
+.center{text-align:center}
+.game-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.game{border:1px solid #eee5fb;border-radius:22px;padding:20px;background:linear-gradient(145deg,#fff,#fbf8ff)}
+.game h3{margin:0 0 7px;font-size:1.25rem;color:#49336e}
+.game p{color:var(--muted);font-size:.92rem;line-height:1.5}
+.game button,.game select{border:0;border-radius:12px;padding:10px 14px;background:#7650dc;color:#fff;font-weight:900;margin:4px}
+.game button.alt{background:#f1eaff;color:#6744b6}
+.game-status{min-height:26px;font-weight:800;color:#6545a7;margin:10px 0}
+.board{display:grid;grid-template-columns:repeat(3,65px);gap:6px;justify-content:center;margin:12px auto}
+.cell{height:65px;border:1px solid #d9c9f1!important;border-radius:13px!important;background:#fff!important;color:#6245a5!important;font-size:1.7rem}
+#snakeCanvas{width:min(100%,300px);height:auto;display:block;margin:10px auto;border-radius:15px;background:#201b31;border:4px solid #e4d8fa}
+.battlebar{height:14px;background:#eee5fb;border-radius:99px;overflow:hidden;margin:8px 0}
+.battlebar span{display:block;height:100%;width:100%;background:linear-gradient(90deg,#70dcb8,#f8cf68);transition:width .25s}
+.dice{font-size:3rem;text-align:center;margin:6px}
+.party-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.party-link{padding:20px;border-radius:20px;background:linear-gradient(140deg,#f7efff,#fff7fb);border:1px solid #eadcfb}
+.party-link h3{margin:0 0 8px}.party-link p{color:var(--muted);line-height:1.5}
+.footer{text-align:center;padding:30px 15px;color:#796d8b;font-size:.9rem}
+.footer strong{color:#7950cf}
+.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,120px);background:#2d2146;color:#fff;padding:12px 18px;
+ border-radius:999px;z-index:50;transition:transform .3s;box-shadow:var(--shadow)}
+.toast.show{transform:translate(-50%,0)}
+.cake-trigger{position:fixed;right:18px;bottom:18px;z-index:35;width:66px;height:66px;border:0;border-radius:50%;background:linear-gradient(145deg,#ffcf68,#ff6fa7 55%,#7954df);color:white;font-size:2rem;box-shadow:0 12px 30px #7146b955;animation:cakePulse 2s ease-in-out infinite;}
+.cake-trigger:active{transform:scale(.9)}
+@keyframes cakePulse{50%{box-shadow:0 12px 30px #7146b955,0 0 0 11px #f5dfff88;transform:translateY(-4px)}}
+.reveal-overlay{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:22px;background:#201633eF;opacity:0;visibility:hidden;transition:opacity .55s,visibility .55s;}
+.reveal-overlay.open{opacity:1;visibility:visible}
+.reveal-card{width:min(560px,100%);text-align:center;padding:clamp(28px,6vw,52px);border-radius:30px;background:linear-gradient(145deg,#fff9ed,#fff0fa 55%,#f0edff);box-shadow:0 25px 90px #09041488;transform:translateY(45px) scale(.88);transition:transform .7s cubic-bezier(.2,.85,.2,1);}
+.reveal-overlay.open .reveal-card{transform:translateY(0) scale(1)}
+.reveal-cake{font-size:clamp(4rem,14vw,7rem);display:block;animation:cakePop .8s .2s both;}
+@keyframes cakePop{0%{transform:scale(.2) rotate(-25deg);opacity:0}70%{transform:scale(1.18) rotate(8deg)}100%{transform:scale(1);opacity:1}}
+.reveal-card h2{font-size:clamp(2rem,7vw,3.6rem);background:linear-gradient(90deg,#f05b9d,#7650dc,#28afd1);color:transparent;background-clip:text;-webkit-background-clip:text}
+.reveal-card p{color:#6e6680;line-height:1.7}
+
+@media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column}.nav{justify-content:flex-start}.hero{min-height:520px}
+ .gallery-grid{grid-template-columns:1fr}.game-grid,.party-grid{grid-template-columns:1fr}.form-frame{height:900px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">🎉 Sambit's Party On</div>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#rsvp">RSVP</a><a href="#party">Party info</a><a href="#photos">Photos</a><a href="#games">Games</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+  <span class="decor d1">🎈</span><span class="decor d2">🎁</span><span class="decor d3">⭐</span><span class="decor d4">🎂</span>
+  <div class="hero-inner">
+    <span class="eyebrow">A special day • A whole lot of fun</span>
+    <h1>HAPPY BIRTHDAY<br>SAMBIT SENAPATI</h1>
+    <p>Get ready for smiles, games, surprises and unforgettable birthday memories. Your celebration starts here!</p>
+    <div class="actions">
+      <a class="btn primary" href="#rsvp">💌 RSVP now</a>
+      <a class="btn secondary" href="#photos">📸 Photo album</a>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="section" id="rsvp">
+    <div class="section-head">
+      <div class="kicker">You're invited</div>
+      <h2>💌 Let us know you're coming!</h2>
+      <p>Fill out the RSVP form so the celebration can be planned. Your response goes to the birthday organizer's linked Google Sheet.</p>
+    </div>
+    <iframe class="form-frame"
+      src="https://docs.google.com/forms/d/e/1FAIpQLSd8qwHRev0Iiy1_GmtYF0PK9xw6xbdyEQr3bseExuNdD0EqcA/viewform?embedded=true"
+      title="Sambit's Birthday RSVP Google Form" loading="lazy">Loading RSVP form…</iframe>
+    <p class="center"><a class="btn secondary" target="_blank" rel="noopener noreferrer"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSd8qwHRev0Iiy1_GmtYF0PK9xw6xbdyEQr3bseExuNdD0EqcA/viewform?usp=dialog">Open RSVP form in a new tab ↗</a></p>
+  </section>
+
+  <section class="section" id="party">
+    <div class="section-head">
+      <div class="kicker">Stay connected</div>
+      <h2>🎈 Party Information</h2>
+      <p>Join the celebration, get the location privately, or send Sambit a birthday wish.</p>
+    </div>
+    <div class="party-grid">
+      <div class="party-link">
+        <h3>📍 Party location</h3>
+        <p>For everyone's privacy, the exact home location is shared directly with invited guests rather than displayed on this public website.</p>
+        <a class="btn primary" href="https://wa.me/?text=Hi%21%20Please%20share%20the%20birthday%20party%20location%20with%20me." target="_blank" rel="noopener noreferrer">📍 Request directions privately ↗</a>
+      </div>
+      <div class="party-link">
+        <h3>📹 Join the WhatsApp video call</h3>
+        <p>Can't attend in person? Open the WhatsApp invitation and join the birthday video call there.</p>
+        <a class="btn primary" href="https://event.whatsapp.com/X9cjfwAEF7_J6RNmS0FSVElLXzkwMzY" target="_blank" rel="noopener noreferrer">📹 Join video call ↗</a>
+      </div>
+      <div class="party-link">
+        <h3>🟢 Send a personal message</h3>
+        <p>Open WhatsApp with a ready-made birthday message. Choose the contact you want to send it to.</p>
+        <a class="btn secondary" href="https://wa.me/?text=Happy%20Birthday%20Sambit%21%20🎉" target="_blank" rel="noopener noreferrer">
+          <svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.83 11.83 0 0 0 12.1 0C5.55 0 .22 5.33.22 11.88c0 2.09.55 4.13 1.6 5.93L.12 24l6.34-1.66a11.9 11.9 0 0 0 5.64 1.44h.01c6.55 0 11.88-5.33 11.89-11.88a11.8 11.8 0 0 0-3.48-8.42ZM12.1 21.76a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.76.99 1-3.66-.24-.38a9.85 9.85 0 0 1-1.52-5.24c0-5.47 4.45-9.92 9.93-9.92a9.86 9.86 0 0 1 7.02 2.91 9.86 9.86 0 0 1 2.9 7.03c0 5.47-4.45 9.92-9.93 9.92Zm5.45-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg>
+          Open WhatsApp ↗
+        </a>
+      </div>
+    </div>
+    <p class="note" style="margin-top:18px">The location request opens WhatsApp so guests can ask the host for directions privately. The exact home pin is intentionally not published on this public page.</p>
+  </section>
+
+  <section class="section" id="photos">
+    <div class="section-head">
+      <div class="kicker">Memories corner</div>
+      <h2>📸 Birthday Photo Gallery</h2>
+      <p>All the best moments in one place. Open the shared album to view and download the birthday photos.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-tile"><div><div class="gallery-emoji">🎂</div><strong>Birthday moments</strong><span>Celebration memories</span></div></div>
+      <div class="gallery-tile"><div><div class="gallery-emoji">🎊</div><strong>Friends & fun</strong><span>Smiles worth saving</span></div></div>
+      <div class="gallery-tile"><div><div class="gallery-emoji">🌈</div><strong>Special memories</strong><span>Open the album below</span></div></div>
+    </div>
+    <div class="center">
+      <a class="btn primary" href="https://drive.google.com/drive/folders/11dRCQlRg05qO-9ZZ7IYcfNayTTOpL_DE"
+         target="_blank" rel="noopener noreferrer">☁️ View & Download Photos</a>
+    </div>
+    <p class="note" style="margin-top:18px">Photo album opens in Google Drive. Set the folder's sharing access so invited guests can view it. Avoid uploading private photos or sharing anyone's picture without their permission.</p>
+  </section>
+
+  <section class="section" id="games">
+    <div class="section-head">
+      <div class="kicker">Play time</div>
+      <h2>🕹️ Mini Games Arcade</h2>
+      <p>Take a little break, challenge the computer and have fun!</p>
+    </div>
+    <div class="game-grid">
+      <article class="game">
+        <h3>⭕ Tic Tac Toe</h3><p>You are X. The computer is O. Try to win!</p>
+        <div class="board" id="tttBoard" aria-label="Tic tac toe board"></div>
+        <div class="game-status" id="tttStatus">Your turn — choose a square.</div>
+        <div class="center"><button class="alt" id="tttReset">Restart game</button></div>
+      </article>
+      <article class="game">
+        <h3>🐍 Snake</h3><p>Use the arrow keys or the buttons to collect stars. Avoid the edges and your tail.</p>
+        <canvas id="snakeCanvas" width="300" height="300" aria-label="Snake game board"></canvas>
+        <div class="center">
+          <button id="snakeStart">Start / Restart</button><br>
+          <button class="alt" data-dir="up">⬆️</button><br>
+          <button class="alt" data-dir="left">⬅️</button><button class="alt" data-dir="down">⬇️</button><button class="alt" data-dir="right">➡️</button>
+        </div>
+        <div class="game-status" id="snakeStatus">Press Start to play.</div>
+      </article>
+      <article class="game">
+        <h3>🎲 Ludo Dice Race</h3><p>A quick mini race: roll the dice and reach 30 before the computer. First to the finish wins!</p>
+        <div class="dice" id="diceFace">🎲</div>
+        <div class="game-status" id="ludoStatus">You: 0 / 30 · Computer: 0 / 30</div>
+        <div class="center"><button id="rollDice">Roll dice</button><button class="alt" id="ludoReset">New race</button></div>
+      </article>
+      <article class="game">
+        <h3>⚔️ Cartoon Arcade Battle</h3><p>A friendly, silly showdown against the Rainbow Blob. Tap the buttons to score points and win the round!</p>
+        <div class="center" style="font-size:3rem">🦸 VS 🟣</div>
+        <strong>Your energy</strong><div class="battlebar"><span id="heroBar"></span></div>
+        <strong>Rainbow Blob energy</strong><div class="battlebar"><span id="blobBar"></span></div>
+        <div class="center"><button id="battleTap">✨ Super sparkle</button><button class="alt" id="battleReset">Restart</button></div>
+        <div class="game-status" id="battleStatus">Ready, hero? Start the friendly battle!</div>
+      </article>
+      <article class="game">
+        <h3>✊ Stone Paper Scissors</h3>
+        <p>Pick one. The computer makes a fresh random choice every round—no fixed win/lose pattern.</p>
+        <div class="center" style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap">
+          <button class="alt" data-choice="stone">✊ Stone</button>
+          <button class="alt" data-choice="paper">✋ Paper</button>
+          <button class="alt" data-choice="scissors">✌️ Scissors</button>
+        </div>
+        <div class="game-status" id="spsResult" aria-live="polite">Make your move!</div>
+        <div class="center" id="spsScore">You: 0 · Computer: 0 · Draws: 0</div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">Made with 🌈 and lots of birthday cheer · <strong>Sambit's Party On</strong></footer>
+<div class="reveal-overlay" id="revealOverlay" role="dialog" aria-modal="true" aria-labelledby="revealTitle" aria-hidden="true"><div class="reveal-card"><span class="reveal-cake">🎂</span><div class="kicker">A little birthday surprise</div><h2 id="revealTitle">SURPRISE, SAMBIT!</h2><p>May your day be full of laughter, friendship, sweet memories and wonderful surprises. Happy Birthday! 🌈</p><button class="btn primary" id="closeReveal" type="button">Let the party begin ✨</button></div></div><button class="cake-trigger" id="cakeTrigger" type="button" aria-label="Open birthday surprise" title="Tap the cake for a surprise">🎂</button><div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+
+/* Cake button: reveal animation plus a short original synthesized fanfare. */
+const revealOverlay=document.getElementById('revealOverlay');
+const cakeTrigger=document.getElementById('cakeTrigger');
+const closeReveal=document.getElementById('closeReveal');
+let birthdayAudioContext=null;
+function playRevealTune(){
+  const AudioContextClass=window.AudioContext||window.webkitAudioContext;
+  if(!AudioContextClass)return;
+  birthdayAudioContext=birthdayAudioContext||new AudioContextClass();
+  birthdayAudioContext.resume();
+  const notes=[523.25,659.25,783.99,1046.5,783.99,880,1046.5,1318.51];
+  const start=birthdayAudioContext.currentTime+.04;
+  notes.forEach((frequency,index)=>{
+    const when=start+index*.22;
+    const oscillator=birthdayAudioContext.createOscillator();
+    const gain=birthdayAudioContext.createGain();
+    oscillator.type='sine';oscillator.frequency.setValueAtTime(frequency,when);
+    gain.gain.setValueAtTime(.0001,when);
+    gain.gain.exponentialRampToValueAtTime(.12,when+.025);
+    gain.gain.exponentialRampToValueAtTime(.0001,when+.19);
+    oscillator.connect(gain);gain.connect(birthdayAudioContext.destination);
+    oscillator.start(when);oscillator.stop(when+.2);
+  });
+}
+function openBirthdayReveal(){
+  revealOverlay.classList.add('open');
+  revealOverlay.setAttribute('aria-hidden','false');
+  document.body.style.overflow='hidden';
+  playRevealTune();
+  closeReveal.focus();
+}
+function closeBirthdayReveal(){
+  revealOverlay.classList.remove('open');
+  revealOverlay.setAttribute('aria-hidden','true');
+  document.body.style.overflow='';
+  cakeTrigger.focus();
+}
+cakeTrigger.addEventListener('click',openBirthdayReveal);
+closeReveal.addEventListener('click',closeBirthdayReveal);
+revealOverlay.addEventListener('click',event=>{if(event.target===revealOverlay)closeBirthdayReveal()});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&revealOverlay.classList.contains('open'))closeBirthdayReveal()});
+
+/* Stone-Paper-Scissors: independent fair random choice on every round. */
+let spsYou=0,spsComputer=0,spsDraws=0;
+const spsNames={stone:'✊ Stone',paper:'✋ Paper',scissors:'✌️ Scissors'};
+document.querySelectorAll('[data-choice]').forEach(button=>{
+  button.addEventListener('click',()=>{
+    const userChoice=button.dataset.choice;
+    const choices=['stone','paper','scissors'];
+    const computerChoice=choices[Math.floor(Math.random()*choices.length)];
+    let outcome;
+    if(userChoice===computerChoice){spsDraws++;outcome='It is a draw!'}
+    else if((userChoice==='stone'&&computerChoice==='scissors')||
+            (userChoice==='paper'&&computerChoice==='stone')||
+            (userChoice==='scissors'&&computerChoice==='paper')){
+      spsYou++;outcome='🎉 You win this round!';
+    }else{spsComputer++;outcome='Computer wins this round. Try again!'}
+    document.getElementById('spsResult').textContent=
+      'You: '+spsNames[userChoice]+' · Computer: '+spsNames[computerChoice]+' — '+outcome;
+    document.getElementById('spsScore').textContent=
+      'You: '+spsYou+' · Computer: '+spsComputer+' · Draws: '+spsDraws;
+  });
+});
+
+/* Decorative confetti */
+const confetti = document.getElementById('confetti');
+for(let i=0;i<34;i++){
+  const bit=document.createElement('i');
+  bit.style.left=(Math.random()*100)+'%';
+  bit.style.animationDelay=(Math.random()*8)+'s';
+  bit.style.animationDuration=(6+Math.random()*6)+'s';
+  bit.style.background=['#ff6b9e','#ffd76a','#7b60e8','#5bc8ee','#72dfbd'][i%5];
+  confetti.appendChild(bit);
+}
+let toastTimer;
+function toast(message){
+  const el=document.getElementById('toast');el.textContent=message;el.classList.add('show');
+  clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2200);
+}
+
+/* Tic Tac Toe vs a simple computer opponent */
+const boardEl=document.getElementById('tttBoard');
+const tttStatus=document.getElementById('tttStatus');
+let cells=Array(9).fill(''),tttOver=false;
+const wins=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+function winner(b){for(const line of wins){const [a,c,d]=line;if(b[a]&&b[a]===b[c]&&b[a]===b[d])return b[a]}return b.every(Boolean)?'draw':null}
+function drawBoard(){
+  boardEl.innerHTML='';
+  cells.forEach((v,i)=>{const b=document.createElement('button');b.className='cell';b.textContent=v;b.setAttribute('aria-label','Square '+(i+1)+' '+(v||'empty'));b.disabled=!!v||tttOver;b.addEventListener('click',()=>humanMove(i));boardEl.appendChild(b)});
+}
+function finishTTT(){const w=winner(cells);if(w){tttOver=true;tttStatus.textContent=w==='X'?'🎉 You win!':w==='O'?'Computer wins this round.':'It is a draw!';drawBoard();return true}return false}
+function humanMove(i){
+ if(tttOver||cells[i])return;cells[i]='X';drawBoard();if(finishTTT())return;
+ tttStatus.textContent='Computer is thinking…';
+ setTimeout(()=>{
+  const open=cells.map((v,i)=>v?null:i).filter(v=>v!==null);
+  // Take a winning move, block a winning move, otherwise choose a useful square.
+  let choice=null;
+  for(const mark of ['O','X']){
+   for(const ix of open){const test=cells.slice();test[ix]=mark;if(winner(test)===mark){choice=ix;break}}
+   if(choice!==null)break;
+  }
+  if(choice===null){const preferred=[4,0,2,6,8,1,3,5,7].filter(ix=>open.includes(ix));choice=preferred[Math.floor(Math.random()*Math.min(3,preferred.length))]??open[0]}
+  cells[choice]='O';drawBoard();if(!finishTTT())tttStatus.textContent='Your turn — choose a square.';
+ },350);
+}
+function resetTTT(){cells=Array(9).fill('');tttOver=false;tttStatus.textContent='Your turn — choose a square.';drawBoard()}
+document.getElementById('tttReset').addEventListener('click',resetTTT);resetTTT();
+
+/* Snake game */
+const canvas=document.getElementById('snakeCanvas'),ctx=canvas.getContext('2d');
+const snakeStatus=document.getElementById('snakeStatus');
+const tile=15,gridCount=20;
+let snake,food,dir,nextDir,snakeTimer=null,snakeScore=0,snakeRunning=false;
+function randomFood(){let f;do{f={x:Math.floor(Math.random()*gridCount),y:Math.floor(Math.random()*gridCount)}}while(snake.some(p=>p.x===f.x&&p.y===f.y));return f}
+function drawSnake(){
+ ctx.fillStyle='#201b31';ctx.fillRect(0,0,300,300);
+ ctx.fillStyle='#ffd76a';ctx.beginPath();ctx.arc(food.x*tile+7.5,food.y*tile+7.5,6,0,Math.PI*2);ctx.fill();
+ snake.forEach((p,i)=>{ctx.fillStyle=i===0?'#72dfbd':'#55b9a0';ctx.fillRect(p.x*tile+1,p.y*tile+1,13,13)});
+}
+function startSnake(){
+ clearInterval(snakeTimer);snake=[{x:10,y:10},{x:9,y:10},{x:8,y:10}];dir={x:1,y:0};nextDir={x:1,y:0};food=randomFood();snakeScore=0;snakeRunning=true;
+ snakeStatus.textContent='Score: 0';drawSnake();snakeTimer=setInterval(stepSnake,135);
+}
+function stepSnake(){
+ if(!snakeRunning)return;dir=nextDir;
+ const head={x:snake[0].x+dir.x,y:snake[0].y+dir.y};
+ if(head.x<0||head.y<0||head.x>=gridCount||head.y>=gridCount||snake.some(p=>p.x===head.x&&p.y===head.y)){
+  snakeRunning=false;clearInterval(snakeTimer);snakeStatus.textContent='Game over! Score: '+snakeScore+'. Press Start to try again.';return;
+ }
+ snake.unshift(head);
+ if(head.x===food.x&&head.y===food.y){snakeScore++;food=randomFood();snakeStatus.textContent='⭐ Score: '+snakeScore}
+ else snake.pop();
+ drawSnake();
+}
+function setDirection(d){
+ const dirs={up:{x:0,y:-1},down:{x:0,y:1},left:{x:-1,y:0},right:{x:1,y:0}};
+ const n=dirs[d];if(!n||!snakeRunning)return;
+ if(n.x===-dir.x&&n.y===-dir.y)return;nextDir=n;
+}
+document.getElementById('snakeStart').addEventListener('click',startSnake);
+document.querySelectorAll('[data-dir]').forEach(b=>b.addEventListener('click',()=>setDirection(b.dataset.dir)));
+document.addEventListener('keydown',e=>{const map={ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right'};if(map[e.key]){e.preventDefault();setDirection(map[e.key])}});
+ctx.fillStyle='#201b31';ctx.fillRect(0,0,300,300);
+
+/* Ludo-inspired quick dice race */
+let you=0,computer=0,ludoDone=false;
+function updateLudo(){document.getElementById('ludoStatus').textContent='You: '+you+' / 30 · Computer: '+computer+' / 30'}
+document.getElementById('rollDice').addEventListener('click',()=>{
+ if(ludoDone)return;
+ const roll=1+Math.floor(Math.random()*6);document.getElementById('diceFace').textContent=['⚀','⚁','⚂','⚃','⚄','⚅'][roll-1];
+ you=Math.min(30,you+roll);updateLudo();
+ if(you>=30){ludoDone=true;document.getElementById('ludoStatus').textContent='🏆 You reached the finish first!';return}
+ const cpu=1+Math.floor(Math.random()*6);computer=Math.min(30,computer+cpu);updateLudo();
+ if(computer>=30){ludoDone=true;document.getElementById('ludoStatus').textContent='Computer reached the finish. Try another race!'}
+});
+document.getElementById('ludoReset').addEventListener('click',()=>{you=0;computer=0;ludoDone=false;document.getElementById('diceFace').textContent='🎲';updateLudo()});
+
+/* Friendly cartoon battle */
+let heroEnergy=100,blobEnergy=100,battleDone=false;
+function updateBattle(){
+ document.getElementById('heroBar').style.width=heroEnergy+'%';
+ document.getElementById('blobBar').style.width=blobEnergy+'%';
+}
+document.getElementById('battleTap').addEventListener('click',()=>{
+ if(battleDone)return;
+ blobEnergy=Math.max(0,blobEnergy-(10+Math.floor(Math.random()*16)));
+ heroEnergy=Math.max(0,heroEnergy-(4+Math.floor(Math.random()*12)));
+ updateBattle();
+ const status=document.getElementById('battleStatus');
+ if(blobEnergy===0){battleDone=true;status.textContent='🌟 You win! The Rainbow Blob sends you a high-five!'}
+ else if(heroEnergy===0){battleDone=true;status.textContent='The Blob wins this round. Try again, hero!'}
+ else status.textContent='Sparkle points scored! Keep going!';
+});
+document.getElementById('battleReset').addEventListener('click',()=>{
+ heroEnergy=100;blobEnergy=100;battleDone=false;updateBattle();document.getElementById('battleStatus').textContent='Ready, hero? Start the friendly battle!';
+});
+updateBattle();
+</script>
+</body>
+</html>
